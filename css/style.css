@@ -265,7 +265,30 @@ li {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	
 }
+
+/* .home::before {    
+	content: "";
+	background-image: url(../assets/images/gas.jpeg);
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: .60;
+}
+
+.home h1{
+	position: relative;
+	color: #ffffff;  
+} */
+
+.home p{
+	color: #ffffff; 
+}
+
 
 .para {
   	width: 50%;
@@ -718,4 +741,10 @@ li {
 		width: 22px;
 		background-size: 22px 34px;
 	}
+}
+
+.faq {
+	padding: 30px 15px 5px 15px;
+	align-content: center;
+	text-align: left;
 }
