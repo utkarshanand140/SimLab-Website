@@ -767,8 +767,9 @@ li {
   .thumbnail_images ul {
 	list-style: none;
 	justify-content: center;
-	display: flex;
-	align-items: center;
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: left;
 	margin-top: 10px;
   }
   .thumbnail_images ul li {
@@ -790,8 +791,12 @@ li {
 	width: 100%;
 	overflow: hidden;
   }
-  
 
+ 
+
+.bullets li {
+ list-style-type: circle;
+}
 
 
 

@@ -91,8 +91,24 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="dropdown01"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                href="#"
+                >Services</a
+              >
+
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li>
+                  <a class="dropdown-item" href="gasCarb.html"
+                    >GasCarb</a
+                  >
+                </li>
+                <li><div class="dropdown-divider"></div></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#plans">Plans</a>
@@ -174,6 +190,22 @@
 
     <!-- Basic -->
     <!--Section: Product Desc-->
+
+
+    <script>
+
+function changeImage(element) {
+
+var main_prodcut_image = document.getElementById('main_product_image');
+main_prodcut_image.src = element.src;
+
+
+}
+
+
+    </script>
+
+
     <section>
       <div class="container">
         <div class="row">
@@ -196,7 +228,7 @@
                     <div class="d-flex flex-column justify-content-center">
                       <div class="main_image">
                         <img
-                          src="https://i.imgur.com/TAzli1U.jpg"
+                          src="assets/images/GasCarb/0.jpg"
                           id="main_product_image"
                           width="350"
                         />
@@ -206,28 +238,58 @@
                           <li>
                             <img
                               onclick="changeImage(this)"
-                              src="https://i.imgur.com/TAzli1U.jpg"
+                              src="assets/images/GasCarb/0.jpg"
                               width="70"
                             />
                           </li>
                           <li>
                             <img
                               onclick="changeImage(this)"
-                              src="https://i.imgur.com/w6kEctd.jpg"
+                              src="assets/images/GasCarb/5.png"
                               width="70"
                             />
                           </li>
                           <li>
                             <img
                               onclick="changeImage(this)"
-                              src="https://i.imgur.com/L7hFD8X.jpg"
+                              src="assets/images/GasCarb/9.png"
                               width="70"
                             />
                           </li>
                           <li>
                             <img
                               onclick="changeImage(this)"
-                              src="https://i.imgur.com/6ZufmNS.jpg"
+                              src="assets/images/GasCarb/10.png"
+                              width="70"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              onclick="changeImage(this)"
+                              src="assets/images/GasCarb/7.png"
+                              width="70"
+                            />
+                          </li>
+                          <li>
+                            <img
+                              onclick="changeImage(this)"
+                              src="assets/images/GasCarb/8.png"
+                              width="70"
+                            />
+                          </li>
+
+                          <li>
+                            <img
+                              onclick="changeImage(this)"
+                              src="assets/images/GasCarb/1.png"
+                              width="70"
+                            />
+                          </li>
+
+                          <li>
+                            <img
+                              onclick="changeImage(this)"
+                              src="assets/images/GasCarb/6.png"
                               width="70"
                             />
                           </li>
@@ -268,14 +330,14 @@
 
           </div>
           <div class="col-lg-6">
+            <br><br>
             <h2>GasKarb Software</h2>
-            <!--TODO: Add Intro Details about the software Later-->
+
             <p>GasKarb is a industrial grade software which is used for simulating the one-dimensional 
               gas carburizing process for the plain carbon and alloy steels. It can also control the process on-line. 
               The code uses finite volume techniques to solve numerically the diffusion equations.
-
             </p>
-
+            <br>
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
               <li class="nav-item">
                 <a
@@ -314,9 +376,10 @@
                 >
               </li>
               <li class="quote_prime">
+                <a href="index.html#contact">
                 <button type="button" class="btn btn-dark quote">
                   Get Quote
-                </button>
+                </button></a>
               </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -326,7 +389,42 @@
                 role="tabpanel"
                 aria-labelledby="pills-home-tab"
               >
-                <!--TODO: Add Info-->
+
+                <h6><u>Use Cases :-</u></h6>
+                <ul class="bullets">
+                  <li>Simulate & Optimize Gas Carburising process.</li>
+                  <li>Control Gas Carburising process online.</li>
+                  <li>Other heat treatment processes like nitrding.(With certain modifications)</li>
+                </ul>
+                <hr>
+                <h6><u>Modelling Features :-</u></h6>
+                <ul class="bullets">
+                  <li>Automatic Mesh Generation.</li>
+                  <li>1D Solutions for Co-ordinate systems & Transient Solutions.</li>
+                  <li>Supported for various material compositions.</li>
+                  <li>Effects of various parameters such as carburising temperature, concentration of carbon, etc can be studied.</li>
+                </ul>
+                <hr>
+
+                <h6><u>Numerical Features :-</u></h6>
+                <ul class="bullets">
+                  <li>Implicit Method used for stable results.</li>
+                  <li>TDMA used to solve algebric equations.</li>
+                  <li>1D diffusion problem solvable in any co-ordinate.</li>
+                </ul>
+                <hr>
+
+                <h6><u>User Interface :-</u></h6>
+                <ul class="bullets">
+                  <li>User friendly interface.</li>
+                  <li>Step by Step tutorial guide.</li>
+                  <li>Warninig messages in case of diversion from process.</li>
+                  <li>Mouse click event for carburisin sampling.</li>
+                </ul>
+                <br><br>
+
+
+
               </div>
               <div
                 class="tab-pane fade"
@@ -334,7 +432,17 @@
                 role="tabpanel"
                 aria-labelledby="pills-profile-tab"
               >
-                <!--TODO: Add Info-->
+
+                <h6><u>Additional Features :-</u></h6>
+                <ul class="bullets">
+                  <li>Fully interactive menu driven software.</li>
+                  <li>Online context sensitive help.</li>
+                  <li>Colored plots for Graphs & Contours.</li>
+                  <li>Provision to import data from other softwares.</li>
+                  <li>Experimental data can be inputted in various forms and can be compared with theory on the same plot.</li>
+                  <li>All data including Graphs and Contours can be loaded, saved & printed.</li>
+                  <li>Fully mouse driven program.</li>
+                </ul>
               </div>
               <div
                 class="tab-pane fade"
@@ -342,7 +450,10 @@
                 role="tabpanel"
                 aria-labelledby="pills-contact-tab"
               >
-                <!--TODO: Add Info-->
+
+                <p>GasCarb Brochure: <a style="color: blue;" href="Docs/GasCarb-broch3.doc" download="w3logo"><u><i>Click Here</i></u></a>
+                
+                </p>
               </div>
             </div>
           </div>
@@ -507,3 +618,9 @@
     <!-- Custom scripts -->
   </body>
 </html>
+
+
+
+
+
+
